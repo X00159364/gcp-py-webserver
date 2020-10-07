@@ -22,7 +22,7 @@ pipeline {
                 // You should use the name that you used when you added the installation on that page.
                 nodejs(nodeJSInstallationName: "Node") {
                     withEnv(["PATH+PULUMI=C:/ProgramData/chocolatey/lib/pulumi/tools/Pulumi/bin"]) {
-                        bat "sleep(60)"
+                        sleep(60)
                         bat "pulumi stack select ${PULUMI_STACK}"
                         bat "pulumi destroy --yes"
                     }
