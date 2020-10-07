@@ -1,0 +1,4 @@
+config:
+  gcp:project: pulumi-290112
+  gcp:region: europe-north1
+  gcp:zone: europe-north1-a
